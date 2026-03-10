@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "Se você usar este trabalho, por favor cite conforme abaixo."
+title: "O Radiante Estrutural: Um Instrumento Pentadimensional para Visualização e Análise de Trajetórias Estruturais em Sistemas Complexos"
+version: 1.0.0
+date-released: "2026-03-10"
+authors:
+  - family-names: "Ohio"
+    given-names: "David"
+    email: "odavidohio@gmail.com"
+abstract: >
+  O Radiante Estrutural é a camada de visualização e análise formal do
+  Método Kappa. Representa o estado de qualquer sistema compatível com o
+  Método Kappa como uma trajetória no espaço K(t) = (Oh, Φ, η, Ξ, DEF).
+  Define três regimes estruturais (Nagare, Utsuroi, Katashi) com critérios
+  geométricos formais, introduz o sub-observável gravitacional Ψ(t) para
+  quantificar custo de reorganização estrutural via ação gravitacional, e
+  especifica o schema radiante.v1 para portabilidade entre domínios.
+  Validações empíricas: Crise Financeira Global 2008 via Kappa-FIN v3
+  (onset Katashi detectado em novembro de 2007, dez meses antes do Lehman),
+  blogosfera política (Adamic & Glance 2005), e abandono educacional (OULAD).
+  Gateway arquitetural para o Kappa-GEO via campo links e Γ_ext = EII·g_eff.
+keywords:
+  - análise topológica de dados
+  - transições de regime
+  - sistemas complexos
+  - Método Kappa
+  - espaço de estados pentadimensional
+  - sub-observável gravitacional
+  - ação gravitacional
+  - Lei de Ohio
+  - persistent homology
+  - Forman-Ricci curvature
+  - visualização de sistemas complexos
+  - Kappa-FIN
+  - Kappa-LLM
+  - Kappa-GEO
+license: "CC-BY-4.0"
+repository-code: "https://github.com/aprimora-ai/kappa-radiante"
+references:
+  - type: software
+    title: "Kappa Method: A Method for Informational Regime Detection via Geometry and Dynamics"
+    authors:
+      - family-names: "Ohio"
+        given-names: "David"
+    doi: "10.5281/zenodo.18883639"
+    year: 2026
+    notes: "Método base — define os cinco observáveis Oh, Φ, η, Ξ, DEF e os três regimes Nagare/Utsuroi/Katashi. O Radiante é a implementação visual deste método."
+  - type: software
+    title: "Kappa-FIN: Topological Early Warning System for Financial Market Crises"
+    authors:
+      - family-names: "Ohio"
+        given-names: "David"
+    doi: "10.5281/zenodo.18917558"
+    year: 2026
+    notes: "Aplicação financeira do Método Kappa. O demo finance_2008_gfc_demo.json neste repositório é a visualização Radiante dos resultados do Kappa-FIN v3 para a GFC 2008."
+  - type: software
+    title: "Kappa-LLM: Multi-Observable Topological Detection of Hallucinations in Large Language Models"
+    authors:
+      - family-names: "Ohio"
+        given-names: "David"
+    doi: "10.5281/zenodo.18883790"
+    year: 2026
+    notes: "Aplicação do Método Kappa a LLMs. O demo llm_demo.json neste repositório visualiza trajetórias de alucinação no espaço Radiante."

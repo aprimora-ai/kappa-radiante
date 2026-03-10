@@ -1,0 +1,59 @@
+{
+  "schema_version": "radiante.v1",
+  "domain": "finance",
+  "run_id": "finance_btcusd_1h_demo",
+  "entity": {
+    "id": "BTC-USD",
+    "label": "BTC / USD (1h)",
+    "meta": {
+      "exchange": "demo",
+      "timezone": "UTC",
+      "currency": "USD"
+    }
+  },
+  "axes": {
+    "mode_instrument": ["oh", "phi", "eta"],
+    "mode_phase": ["oh", "dphi", "eta"]
+  },
+  "time": {
+    "index_name": "t",
+    "start": "2024-01-01T00:00:00Z",
+    "step": "PT1H",
+    "units": "hour"
+  },
+  "series": [
+    {
+      "t": 0,
+      "state": { "oh": 0.91, "phi": 0.00012, "eta": 0.34, "xi": 1.15 },
+      "phase": { "dphi": 0, "doh": 0, "deta": 0 },
+      "regime": { "label": "nagare", "score": 0.78 },
+      "signals": { "def": 0.05, "calm": 0.72, "lam": 0.85, "turb": 0.15 },
+      "events": [],
+      "raw_ref": { "source": "ohlcv", "id": "bar_0" }
+    },
+    {
+      "t": 1,
+      "state": { "oh": 0.94, "phi": 0.00016, "eta": 0.37, "xi": 1.21 },
+      "phase": { "dphi": 0.00004, "doh": 0.03, "deta": 0.03 },
+      "regime": { "label": "utsuroi", "score": 0.64 },
+      "signals": { "def": 0.1, "calm": 0.6, "lam": 0.72, "turb": 0.28 },
+      "events": [
+        { "type": "note", "label": "volatility pickup", "severity": 0.4 }
+      ],
+      "raw_ref": { "source": "ohlcv", "id": "bar_1" }
+    },
+    {
+      "t": 2,
+      "state": { "oh": 1.02, "phi": 0.00034, "eta": 0.51, "xi": 1.48 },
+      "phase": { "dphi": 0.00018, "doh": 0.08, "deta": 0.14 },
+      "regime": { "label": "katashi", "score": 0.81 },
+      "signals": { "def": 0.28, "calm": 0.35, "lam": 0.4, "turb": 0.6 },
+      "events": [
+        { "type": "alert", "label": "regime shift", "severity": 0.8 }
+      ],
+      "raw_ref": { "source": "ohlcv", "id": "bar_2" }
+    }
+  ],
+  "links": []
+}
+

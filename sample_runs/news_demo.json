@@ -1,0 +1,59 @@
+{
+  "schema_version": "radiante.v1",
+  "domain": "news",
+  "run_id": "news_tech_stream_demo",
+  "entity": {
+    "id": "tech_news",
+    "label": "Notícias — Tecnologia (diário)",
+    "meta": { "sources": ["demo_feed"], "language": "pt-BR" }
+  },
+  "axes": {
+    "mode_instrument": ["oh", "phi", "eta"],
+    "mode_phase": ["oh", "dphi", "eta"]
+  },
+  "time": {
+    "index_name": "t",
+    "start": "2025-01-01",
+    "step": "P1D",
+    "units": "day"
+  },
+  "series": [
+    {
+      "t": 0,
+      "state": { "oh": 0.9, "phi": 0.00011, "eta": 0.3, "xi": 1.1 },
+      "phase": { "dphi": 0, "doh": 0, "deta": 0 },
+      "regime": { "label": "nagare", "score": 0.71 },
+      "signals": { "def": 0.07, "calm": 0.66, "lam": 0.78, "turb": 0.22 },
+      "events": [
+        {
+          "type": "note",
+          "label": "baixa entropia editorial",
+          "severity": 0.3
+        }
+      ],
+      "raw_ref": { "source": "rss", "id": "2025-01-01" }
+    },
+    {
+      "t": 1,
+      "state": { "oh": 0.97, "phi": 0.0002, "eta": 0.44, "xi": 1.29 },
+      "phase": { "dphi": 0.00009, "doh": 0.07, "deta": 0.14 },
+      "regime": { "label": "utsuroi", "score": 0.62 },
+      "signals": { "def": 0.15, "calm": 0.52, "lam": 0.6, "turb": 0.4 },
+      "events": [{ "type": "note", "label": "agenda shift", "severity": 0.6 }],
+      "raw_ref": { "source": "rss", "id": "2025-01-02" }
+    },
+    {
+      "t": 2,
+      "state": { "oh": 1.03, "phi": 0.00039, "eta": 0.58, "xi": 1.61 },
+      "phase": { "dphi": 0.00019, "doh": 0.06, "deta": 0.14 },
+      "regime": { "label": "katashi", "score": 0.79 },
+      "signals": { "def": 0.26, "calm": 0.33, "lam": 0.42, "turb": 0.58 },
+      "events": [
+        { "type": "alert", "label": "narrative turbulence", "severity": 0.8 }
+      ],
+      "raw_ref": { "source": "rss", "id": "2025-01-03" }
+    }
+  ],
+  "links": []
+}
+

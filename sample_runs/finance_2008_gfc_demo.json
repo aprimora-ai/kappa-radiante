@@ -1,0 +1,170 @@
+{
+  "schema_version": "radiante.v1",
+  "domain": "finance",
+  "run_id": "kappa_fin_v3_gfc2008_sp500",
+  "entity": {
+    "id": "SP500_GFC2008",
+    "label": "S&P 500 — Crise Financeira Global 2008",
+    "meta": {
+      "tickers": 13,
+      "window": "22d",
+      "k": 5,
+      "distance": "d_ij = sqrt(2*(1 - C_ij))",
+      "calm_start": "2004-12-21",
+      "calm_end": "2006-02-10",
+      "source": "Kappa-FIN v3 — DOI 10.5281/zenodo.18883821"
+    }
+  },
+  "axes": {
+    "mode_instrument": ["oh", "phi", "eta"],
+    "mode_phase": ["oh", "dphi", "eta"]
+  },
+  "time": {
+    "index_name": "t",
+    "start": "2006-01-03",
+    "step": "P1D",
+    "units": "day"
+  },
+  "series": [
+    {
+      "t": 0,
+      "state": { "oh": 0.338, "phi": 0.000001, "eta": 0.952, "xi": 0.667, "def": 0.184 },
+      "phase": { "doh": 0, "dphi": 0, "deta": 0, "dxi": 0, "ddef": 0 },
+      "regime": { "label": "utsuroi", "score": 0.61 },
+      "signals": { "calm": 0.72, "nu_s": 0.0 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2006-01-03" }
+    },
+    {
+      "t": 1,
+      "state": { "oh": 0.659, "phi": 0.000001, "eta": 0.488, "xi": 0.667, "def": 0.398 },
+      "phase": { "doh": 0.321, "dphi": 0.0, "deta": -0.464, "dxi": 0.0, "ddef": 0.214 },
+      "regime": { "label": "utsuroi", "score": 0.58 },
+      "signals": { "calm": 0.65, "nu_s": 0.0 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2007-01-03" }
+    },
+    {
+      "t": 2,
+      "state": { "oh": 0.659, "phi": 0.000001, "eta": 0.488, "xi": 0.333, "def": 0.070 },
+      "phase": { "doh": 0.0, "dphi": 0.0, "deta": 0.0, "dxi": -0.334, "ddef": -0.328 },
+      "regime": { "label": "utsuroi", "score": 0.60 },
+      "signals": { "calm": 0.67, "nu_s": 0.0 },
+      "events": [{ "type": "note", "label": "Concentração estrutural silenciosa — Ξ começa a cair", "severity": 0.3 }],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2007-06-01" }
+    },
+    {
+      "t": 3,
+      "state": { "oh": 0.980, "phi": 0.000001, "eta": 0.328, "xi": 1.000, "def": 0.095 },
+      "phase": { "doh": 0.321, "dphi": 0.0, "deta": -0.160, "dxi": 0.667, "ddef": 0.025 },
+      "regime": { "label": "katashi", "score": 0.78 },
+      "signals": { "calm": 0.30, "nu_s": 42.1 },
+      "events": [{ "type": "alert", "label": "ONSET KATASHI — Φ > Φ_c confirmado (2007-11-12)", "severity": 0.85 }],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2007-11-12" }
+    },
+    {
+      "t": 4,
+      "state": { "oh": 1.302, "phi": 0.241, "eta": 0.247, "xi": 0.667, "def": 0.722 },
+      "phase": { "doh": 0.322, "dphi": 0.241, "deta": -0.081, "dxi": -0.333, "ddef": 0.627 },
+      "regime": { "label": "katashi", "score": 0.94 },
+      "signals": { "calm": 0.05, "nu_s": 386.0 },
+      "events": [
+        { "type": "alert", "label": "⚠️ Oh > 1 (supercrítico) + Φ = 0.241 > Φ* = 0.184 — IRREVERSIBILIDADE ATINGIDA. 10 meses antes do Lehman.", "severity": 1.0 }
+      ],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2007-11-13" }
+    },
+    {
+      "t": 5,
+      "state": { "oh": 0.338, "phi": 0.088, "eta": 0.952, "xi": 0.000, "def": 1.000 },
+      "phase": { "doh": -0.964, "dphi": -0.153, "deta": 0.705, "dxi": -0.667, "ddef": 0.278 },
+      "regime": { "label": "katashi", "score": 0.88 },
+      "signals": { "calm": 0.08, "nu_s": 312.4 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-01-02" }
+    },
+    {
+      "t": 6,
+      "state": { "oh": 0.338, "phi": 0.019, "eta": 0.952, "xi": 0.667, "def": 0.651 },
+      "phase": { "doh": 0.0, "dphi": -0.069, "deta": 0.0, "dxi": 0.667, "ddef": -0.349 },
+      "regime": { "label": "katashi", "score": 0.82 },
+      "signals": { "calm": 0.12, "nu_s": 287.1 },
+      "events": [{ "type": "note", "label": "Bear Stearns — crise de liquidez (Mar/2008). Oh cai mas η = 0.952: redistribuição sem reorganização.", "severity": 0.70 }],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-03-14" }
+    },
+    {
+      "t": 7,
+      "state": { "oh": 0.498, "phi": 0.002, "eta": 0.645, "xi": 0.667, "def": 0.214 },
+      "phase": { "doh": 0.160, "dphi": -0.017, "deta": -0.307, "dxi": 0.0, "ddef": -0.437 },
+      "regime": { "label": "katashi", "score": 0.75 },
+      "signals": { "calm": 0.15, "nu_s": 198.3 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-07-01" }
+    },
+    {
+      "t": 8,
+      "state": { "oh": 0.980, "phi": 0.0004, "eta": 0.328, "xi": 0.333, "def": 0.033 },
+      "phase": { "doh": 0.482, "dphi": -0.0016, "deta": -0.317, "dxi": -0.334, "ddef": -0.181 },
+      "regime": { "label": "katashi", "score": 0.81 },
+      "signals": { "calm": 0.10, "nu_s": 156.7 },
+      "events": [{ "type": "note", "label": "Fannie Mae / Freddie Mac resgatados — véspera do Lehman", "severity": 0.75 }],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-09-12" }
+    },
+    {
+      "t": 9,
+      "state": { "oh": 0.980, "phi": 0.0004, "eta": 0.328, "xi": 0.333, "def": 1.000 },
+      "phase": { "doh": 0.0, "dphi": -0.00001, "deta": 0.0, "dxi": 0.0, "ddef": 0.967 },
+      "regime": { "label": "katashi", "score": 0.87 },
+      "signals": { "calm": 0.02, "nu_s": 156.7 },
+      "events": [
+        { "type": "alert", "label": "💥 LEHMAN BROTHERS — falência declarada 15/09/2008. Sistema em Katashi há 386 dias contínuos.", "severity": 1.0 }
+      ],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-09-15" }
+    },
+    {
+      "t": 10,
+      "state": { "oh": 0.659, "phi": 0.0003, "eta": 0.488, "xi": 0.000, "def": 0.208 },
+      "phase": { "doh": -0.321, "dphi": -0.0001, "deta": 0.160, "dxi": -0.333, "ddef": -0.792 },
+      "regime": { "label": "katashi", "score": 0.80 },
+      "signals": { "calm": 0.08, "nu_s": 134.2 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-09-16" }
+    },
+    {
+      "t": 11,
+      "state": { "oh": 0.659, "phi": 0.0001, "eta": 0.488, "xi": 0.333, "def": 1.000 },
+      "phase": { "doh": 0.0, "dphi": -0.0002, "deta": 0.0, "dxi": 0.333, "ddef": 0.792 },
+      "regime": { "label": "katashi", "score": 0.77 },
+      "signals": { "calm": 0.10, "nu_s": 98.1 },
+      "events": [{ "type": "note", "label": "TARP aprovado — intervenção externa. Γ_ext começa a dissipação da barreira de potencial.", "severity": 0.65 }],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2008-10-15" }
+    },
+    {
+      "t": 12,
+      "state": { "oh": 0.659, "phi": 0.00004, "eta": 0.488, "xi": 0.333, "def": 0.651 },
+      "phase": { "doh": 0.0, "dphi": -0.00006, "deta": 0.0, "dxi": 0.0, "ddef": -0.349 },
+      "regime": { "label": "katashi", "score": 0.70 },
+      "signals": { "calm": 0.18, "nu_s": 45.3 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2009-01-02" }
+    },
+    {
+      "t": 13,
+      "state": { "oh": 0.338, "phi": 0.0000018, "eta": 0.952, "xi": 0.333, "def": 0.273 },
+      "phase": { "doh": -0.321, "dphi": -0.000038, "deta": 0.464, "dxi": 0.0, "ddef": -0.378 },
+      "regime": { "label": "utsuroi", "score": 0.62 },
+      "signals": { "calm": 0.45, "nu_s": 8.2 },
+      "events": [{ "type": "note", "label": "Transição Katashi → Utsuroi confirmada (Jun/2009). Recuperação lenta.", "severity": 0.40 }],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2009-06-01" }
+    },
+    {
+      "t": 14,
+      "state": { "oh": 0.659, "phi": 0.000001, "eta": 0.488, "xi": 0.333, "def": 0.049 },
+      "phase": { "doh": 0.321, "dphi": -0.0000008, "deta": -0.464, "dxi": 0.0, "ddef": -0.224 },
+      "regime": { "label": "utsuroi", "score": 0.65 },
+      "signals": { "calm": 0.58, "nu_s": 0.0 },
+      "events": [],
+      "raw_ref": { "source": "kappa_fin_v3", "date": "2010-01-04" }
+    }
+  ],
+  "links": []
+}

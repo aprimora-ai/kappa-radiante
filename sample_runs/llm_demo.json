@@ -1,0 +1,53 @@
+{
+  "schema_version": "radiante.v1",
+  "domain": "llm",
+  "run_id": "llm_hal_eval_demo",
+  "entity": {
+    "id": "mistral_7b_halueval",
+    "label": "Mistral-7B — HaluEval",
+    "meta": { "dataset": "HaluEval", "split": "dev", "window": 128 }
+  },
+  "axes": {
+    "mode_instrument": ["oh", "phi", "eta"],
+    "mode_phase": ["oh", "dphi", "eta"]
+  },
+  "time": {
+    "index_name": "t",
+    "start": "window_0",
+    "step": "window",
+    "units": "window"
+  },
+  "series": [
+    {
+      "t": 0,
+      "state": { "oh": 0.88, "phi": 0.00009, "eta": 0.29, "xi": 1.05 },
+      "phase": { "dphi": 0, "doh": 0, "deta": 0 },
+      "regime": { "label": "nagare", "score": 0.73 },
+      "signals": { "def": 0.06, "calm": 0.7, "lam": 0.82, "turb": 0.18 },
+      "events": [{ "type": "tag", "label": "factual", "severity": 0.2 }],
+      "raw_ref": { "source": "halueval", "id": "sample_000" }
+    },
+    {
+      "t": 1,
+      "state": { "oh": 0.96, "phi": 0.00022, "eta": 0.41, "xi": 1.32 },
+      "phase": { "dphi": 0.00013, "doh": 0.08, "deta": 0.12 },
+      "regime": { "label": "utsuroi", "score": 0.67 },
+      "signals": { "def": 0.17, "calm": 0.48, "lam": 0.62, "turb": 0.38 },
+      "events": [{ "type": "tag", "label": "mixed", "severity": 0.5 }],
+      "raw_ref": { "source": "halueval", "id": "sample_001" }
+    },
+    {
+      "t": 2,
+      "state": { "oh": 1.01, "phi": 0.00051, "eta": 0.62, "xi": 1.75 },
+      "phase": { "dphi": 0.00029, "doh": 0.05, "deta": 0.21 },
+      "regime": { "label": "katashi", "score": 0.86 },
+      "signals": { "def": 0.33, "calm": 0.28, "lam": 0.35, "turb": 0.65 },
+      "events": [
+        { "type": "alert", "label": "hallucination burst", "severity": 0.9 }
+      ],
+      "raw_ref": { "source": "halueval", "id": "sample_002" }
+    }
+  ],
+  "links": []
+}
+
