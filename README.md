@@ -127,8 +127,8 @@ kappa-radiante/
 │   ├── radiante-schema.ts     # Schema radiante.v1 with Zod
 │   └── data-adapter.ts        # radiante.v1 → StructuralTimePoint conversion
 ├── components/
-│   ├── RadiantScene.tsx        # 3D visualization (instrument/phase mode)
-│   └── RadiantScene5D.tsx      # 5D visualization with configurable projections
+│   ├── RadiantScene.tsx        # Interactive 3D scene (instrument/phase mode)
+│   └── RadiantScene5D.tsx      # Interactive 3D scene with configurable 5D projections
 ├── sample_runs/               # Multi-domain demos (schema radiante.v1)
 ├── political/                 # Political validation scripts + polblogs dataset
 ├── CITATION.cff
