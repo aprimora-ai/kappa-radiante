@@ -1,88 +1,87 @@
-# O Radiante Estrutural
+# Kappa-Radiante
 
-**Camada de visualização e análise formal do Método Kappa**
+**Visualization and formal analysis layer of the Kappa Method**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18883639.svg)](https://doi.org/10.5281/zenodo.18883639)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-> *"Na astronomia, o radiante é o ponto do céu do qual trajetórias de meteoros parecem convergir quando projetadas em 2D. O Radiante Estrutural opera a operação inversa — toma trajetórias de alta dimensão e as projeta em espaços interpretáveis, preservando as propriedades de regime que importam."*
+> *"In astronomy, the radiant is the point in the sky from which meteor trajectories appear to converge when projected onto 2D. The Structural Radiante operates the inverse — it takes high-dimensional trajectories and projects them into interpretable spaces, preserving the regime properties that matter."*
 >
 > — David Ohio, 2026
 
 ---
 
-## O que é
+## What it is
 
-O Radiante Estrutural é um instrumento de navegação para o espaço pentadimensional do **Método Kappa**. Onde o Kappa detecta instabilidade estrutural em séries temporais, o Radiante responde às perguntas que a detecção levanta:
+The Structural Radiante (*Radiante Estrutural*) is a navigation instrument for the pentadimensional state space of the **Kappa Method**. Where the Kappa Method detects structural instability in time series, the Radiante answers the questions that detection raises:
 
-- **Em que regime está o sistema?** (Nagare / Utsuroi / Katashi)
-- **Com que velocidade se move em direção à ruptura?**
-- **Qual o custo energético de reorganização?** (sub-observável gravitacional Ψ)
-- **Para onde vai depois?**
+- **What regime is the system in?** (Nagare / Utsuroi / Katashi)
+- **How fast is it moving toward rupture?**
+- **What is the energetic cost of reorganization?** (gravitational sub-observable Ψ)
+- **Where does it go next?**
 
-O instrumento introduz a **condição de análise de custo em formato de ação gravitacional** — a quantidade de trabalho que um sistema precisa realizar contra seu próprio campo gravitacional estrutural para sair de um regime cristalizado.
+The instrument introduces **cost analysis as gravitational action** — the amount of work a system must perform against its own structural gravitational field to exit a crystallized regime.
 
 ---
 
-## Ecossistema Kappa
+## The Kappa Ecosystem
 
-O Radiante é a camada visual de um ecossistema de ferramentas baseadas no Método Kappa:
+The Radiante is the visualization layer of a family of tools built on the Kappa Method:
 
-| Publicação | DOI | Papel no ecossistema |
+| Publication | DOI | Role |
 |---|---|---|
-| **Kappa Method** (relatório técnico) | [10.5281/zenodo.18883639](https://doi.org/10.5281/zenodo.18883639) | Fundamento teórico — define Oh, Φ, η, Ξ, DEF e os três regimes |
-| **Kappa-FIN v3** | [10.5281/zenodo.18917558](https://doi.org/10.5281/zenodo.18917558) | Aplicação financeira — 17 crises (1985–2023), GFC 2008 detectada com 10 meses de antecedência |
-| **Kappa-LLM** | [10.5281/zenodo.18883790](https://doi.org/10.5281/zenodo.18883790) | Aplicação em LLMs — detecção de alucinações via dinâmica de atenção, AUC 94.2% |
-| **Radiante Estrutural** ← *este repositório* | — | Visualização e análise formal. Schema radiante.v1. Sub-observável gravitacional Ψ. |
-| **Kappa-GEO** *(em desenvolvimento)* | — | Aplicação geopolítica — redes GDELT, EII, Γ_ext = EII·g_eff |
+| **Kappa Method** (technical report) | [10.5281/zenodo.18883639](https://doi.org/10.5281/zenodo.18883639) | Theoretical foundation — defines Oh, Φ, η, Ξ, DEF and the three regimes |
+| **Kappa-FIN v3** | [10.5281/zenodo.18917558](https://doi.org/10.5281/zenodo.18917558) | Financial application — 17 historical crises (1985–2023), GFC 2008 detected 10 months before Lehman |
+| **Kappa-LLM** | [10.5281/zenodo.18883790](https://doi.org/10.5281/zenodo.18883790) | LLM application — hallucination detection via attention dynamics, AUC 94.2% |
+| **Kappa-Radiante** ← *this repository* | — | Visualization and formal analysis. Schema radiante.v1. Gravitational sub-observable Ψ. |
+| **Kappa-GEO** *(in development)* | — | Geopolitical application — GDELT networks, EII, Γ_ext = EII·g_eff |
 
 ---
 
-## O Vetor de Estado K(t)
+## The State Vector K(t)
 
-Todo sistema compatível com o Método Kappa produz o vetor:
+Every system compatible with the Kappa Method produces the vector:
 
 ```
 K(t) = (Oh(t), Φ(t), η(t), Ξ(t), DEF(t))
 ```
 
-| Observável | Nome | Interpretação |
+| Observable | Name | Interpretation |
 |---|---|---|
-| `Oh(t)` | Número de Ohio | Pressão topológica. Oh > 1 = regime supercrítico |
-| `Φ(t)` | Memória Estrutural | Dano acumulado sem resolução |
-| `η(t)` | Rigidez Dinâmica | Resistência à reorganização. η → 1 = travamento |
-| `Ξ(t)` | Diversidade Estrutural | Graus de liberdade topológicos disponíveis |
-| `DEF(t)` | Déficit Estado-Fase | Divergência entre estado corrente e espaço de fase esperado |
+| `Oh(t)` | Ohio Number | Topological pressure. Oh > 1 = supercritical regime |
+| `Φ(t)` | Structural Memory | Accumulated unresolved damage |
+| `η(t)` | Dynamic Rigidity | Resistance to reorganization. η → 1 = gravitational locking |
+| `Ξ(t)` | Structural Diversity | Available topological degrees of freedom |
+| `DEF(t)` | State-Phase Deficit | Divergence between current state and expected phase space |
 
 ---
 
-## Os Três Regimes
+## The Three Regimes
 
-| Regime | Japonês | Critérios formais | Dinâmica |
+| Regime | Japanese | Formal criteria | Dynamics |
 |---|---|---|---|
-| **Nagare** | 流れ | Ξ > 0.6, η < 0.4, DEF < 0.3 | Fluxo adaptativo — pressão distribuída |
-| **Utsuroi** | 移ろい | Estado liminar | Máxima sensibilidade a intervenções |
-| **Katashi** | 硬し | η > 0.6, Φ > 0.6, Ξ < 0.4 | Cristalização — precede ruptura SPS |
+| **Nagare** | 流れ | Ξ > 0.6, η < 0.4, DEF < 0.3 | Adaptive flow — pressure distributed across topology |
+| **Utsuroi** | 移ろい | Liminal state | Maximum sensitivity to interventions |
+| **Katashi** | 硬し | η > 0.6, Φ > 0.6, Ξ < 0.4 | Crystallization — locked correlations, precedes SPS rupture |
 
 ---
 
-## Sub-observável Gravitacional Ψ
+## Gravitational Sub-observable Ψ
 
-O Radiante introduz a análise de custo de reorganização como **ação gravitacional**:
+The Radiante introduces reorganization cost analysis as **gravitational action**:
 
 ```
 g_eff(t) = g₀ + α_η·η + α_Φ·Φ + α_D·DEF + α_Oh·max(0, Oh - 1)
 Ψ(t)     = g_eff(t) · z(t)
-Γ_t      = max(0, Ψ(t+1) − Ψ(t))   # custo de reorganização
+Γ_t      = max(0, Ψ(t+1) − Ψ(t))   # reorganization cost
 ```
 
-Quando Γ é alto mas o sistema não reorganiza, o sistema está **selado sob pressão** — análogo geopolítico ao travamento financeiro de 2007–2008.
+When Γ is high but the system does not reorganize, it is **sealed under pressure** — the geopolitical analogue of the financial gravitational locking of 2007–2008.
 
 ---
 
 ## Schema radiante.v1
 
-O schema de intercâmbio é agnóstico ao domínio. Qualquer saída do Método Kappa pode ser convertida para radiante.v1:
+The exchange schema is domain-agnostic. Any Kappa Method output can be converted to radiante.v1:
 
 ```json
 {
@@ -94,87 +93,87 @@ O schema de intercâmbio é agnóstico ao domínio. Qualquer saída do Método K
     "state":   { "oh": 1.302, "phi": 0.241, "eta": 0.247, "xi": 0.667, "def": 0.722 },
     "regime":  { "label": "katashi", "score": 0.94 },
     "signals": { "nu_s": 386.0 },
-    "events":  [{ "type": "alert", "label": "IRREVERSIBILIDADE ATINGIDA", "severity": 1.0 }]
+    "events":  [{ "type": "alert", "label": "IRREVERSIBILITY REACHED", "severity": 1.0 }]
   }],
   "links": []
 }
 ```
 
-O campo `signals` é catch-all — aceita qualquer float sem quebrar o schema. O campo `links` é a infraestrutura para redes multi-entidade (Kappa-GEO).
+The `signals` field is catch-all — accepts any float without schema changes. The `links` field is the infrastructure for multi-entity networks (Kappa-GEO).
 
 ---
 
-## Demos incluídos
+## Included Demos
 
-| Arquivo | Domínio | Evento chave |
+| File | Domain | Key event |
 |---|---|---|
-| `finance_2008_gfc_demo.json` | Financeiro | GFC 2008 — onset Katashi nov/2007, Lehman set/2008. Dados reais Kappa-FIN v3. |
-| `finance_demo.json` | Financeiro | BTC/USD — demonstração de regime volátil |
-| `political_demo.json` | Político | Blogosfera 2004 (Adamic & Glance) — câmaras de eco em Katashi |
-| `education_withdrawn_demo.json` | Educacional | OULAD 2014J — abandono detectado via Katashi precoce |
-| `education_pass_demo.json` | Educacional | OULAD 2014J — trajetória de aprovação em Utsuroi |
-| `llm_demo.json` | LLM | Mistral-7B HaluEval — alucinação como atrator obsessivo |
-| `news_demo.json` | Mídia | Ciclo de notícias de tecnologia |
+| `finance_2008_gfc_demo.json` | Financial | GFC 2008 — Katashi onset Nov/2007, Lehman Sep/2008. Real data from Kappa-FIN v3. |
+| `finance_demo.json` | Financial | BTC/USD — volatile regime demonstration |
+| `political_demo.json` | Political | 2004 blogosphere (Adamic & Glance) — echo chambers in Katashi |
+| `education_withdrawn_demo.json` | Educational | OULAD 2014J — dropout detected via early Katashi |
+| `education_pass_demo.json` | Educational | OULAD 2014J — passing trajectory in Utsuroi |
+| `llm_demo.json` | LLM | Mistral-7B HaluEval — hallucination as obsessive attractor |
+| `news_demo.json` | Media | Technology news cycle |
 
 ---
 
-## Estrutura do Repositório
+## Repository Structure
 
 ```
-katashi-radiante-3d/
+kappa-radiante/
 ├── lib/
-│   ├── pentadimensional.ts    # StateVector5D, classificação de regime, PNR, projeção 3D
-│   ├── gravitational.ts       # Ψ(t), g_eff(t), Γ, travamento gravitacional
-│   ├── radiante-schema.ts     # Schema radiante.v1 com Zod
-│   └── data-adapter.ts        # Conversão radiante.v1 → StructuralTimePoint
+│   ├── pentadimensional.ts    # StateVector5D, regime classification, PNR, 3D projection
+│   ├── gravitational.ts       # Ψ(t), g_eff(t), Γ, gravitational locking
+│   ├── radiante-schema.ts     # Schema radiante.v1 with Zod
+│   └── data-adapter.ts        # radiante.v1 → StructuralTimePoint conversion
 ├── components/
-│   ├── RadiantScene.tsx        # Visualização 3D (modo instrumento/fase)
-│   └── RadiantScene5D.tsx      # Visualização 5D com projeções configuráveis
-├── sample_runs/               # Demos multi-domínio (schema radiante.v1)
+│   ├── RadiantScene.tsx        # 3D visualization (instrument/phase mode)
+│   └── RadiantScene5D.tsx      # 5D visualization with configurable projections
+├── sample_runs/               # Multi-domain demos (schema radiante.v1)
+├── political/                 # Political validation scripts + polblogs dataset
 ├── CITATION.cff
 └── README.md
 ```
 
 ---
 
-## Instalação
+## Installation
 
 ```bash
 npm install
 npm run dev
 ```
 
-Requer Node.js 18+.
+Requires Node.js 18+.
 
 ---
 
-## Citação
+## Citation
 
 ```bibtex
 @software{ohio2026radiante,
   author    = {Ohio, David},
-  title     = {O Radiante Estrutural: Um Instrumento Pentadimensional para
-               Visualização e Análise de Trajetórias Estruturais em Sistemas Complexos},
+  title     = {Kappa-Radiante: Visualization and Formal Analysis Layer
+               of the Kappa Method},
   year      = {2026},
   publisher = {Zenodo},
-  note      = {Implementação visual do Método Kappa. Introduz sub-observável
-               gravitacional Ψ(t) e schema radiante.v1.}
+  note      = {Introduces gravitational sub-observable Ψ(t) and schema radiante.v1.}
 }
 ```
 
-Para citar o **Método Kappa** (fundamento teórico):
+To cite the **Kappa Method** (theoretical foundation):
 ```
 Ohio, D. (2026). Kappa: A Method for Informational Regime Detection via Geometry and Dynamics.
 Zenodo. DOI: 10.5281/zenodo.18883639
 ```
 
-Para citar o **Kappa-FIN** (aplicação financeira):
+To cite **Kappa-FIN** (financial application):
 ```
 Ohio, D. (2026). Kappa-FIN: Topological Early Warning System for Financial Market Crises.
 Zenodo. DOI: 10.5281/zenodo.18917558
 ```
 
-Para citar o **Kappa-LLM** (aplicação em LLMs):
+To cite **Kappa-LLM** (LLM application):
 ```
 Ohio, D. (2026). Kappa-LLM: Multi-Observable Topological Detection of Hallucinations in LLMs.
 Zenodo. DOI: 10.5281/zenodo.18883790
@@ -182,14 +181,14 @@ Zenodo. DOI: 10.5281/zenodo.18883790
 
 ---
 
-## Autor
+## Author
 
-**David Ohio** — Pesquisador Independente  
+**David Ohio** — Independent Researcher  
 odavidohio@gmail.com  
 GitHub: [aprimora-ai](https://github.com/aprimora-ai)
 
 ---
 
-## Licença
+## License
 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
