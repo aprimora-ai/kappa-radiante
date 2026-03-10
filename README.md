@@ -17,6 +17,19 @@
 
 ---
 
+## Screenshots
+
+**Finance — GFC 2008 (S&P 500)** | Regime: KATASHI · Score 0.94 · ⚠ PRE-NR detected
+![GFC 2008 critical position](assets/screenshots/GFC%202008%2C%20critical%20position.png)
+
+**Education — Student Dropout (OULAD 2014J)** | Regime: KATASHI · Score 0.68
+![Education withdrawn OULAD](assets/screenshots/education%20withdrawn.png)
+
+**Political — Blogosphere polarization (Adamic & Glance 2005)** | Regime: KATASHI · Score 0.85 · 100% critical period
+![Political blogosphere 2004](assets/screenshots/political_blogosphere.png)
+
+---
+
 ## What it is
 
 The Structural Radiante (*Radiante Estrutural*) is a navigation instrument for the pentadimensional state space of the **Kappa Method**. Where the Kappa Method detects structural instability in time series, the Radiante answers the questions that detection raises:
