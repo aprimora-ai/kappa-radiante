@@ -5,6 +5,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18932379.svg)](https://doi.org/10.5281/zenodo.18932379)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+**Paper:** [`paper/radiante_structural_v1_ohio2026.pdf`](paper/radiante_structural_v1_ohio2026.pdf)
+
 > *"In astronomy, the radiant is the point in the sky from which meteor trajectories appear to converge when projected onto 2D. The Structural Radiante operates the inverse — it takes high-dimensional trajectories and projects them into interpretable spaces, preserving the regime properties that matter."*
 >
 > — David Ohio, 2026

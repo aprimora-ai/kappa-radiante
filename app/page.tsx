@@ -25,6 +25,7 @@ import { RadianteV1, parseRadianteV1 } from "../lib/radiante-schema";
 // Importar datasets
 import legacyData from "../public/data/state.json";
 import financeDemo from "../sample_runs/finance_demo.json";
+import finance2008Demo from "../sample_runs/finance_2008_gfc_demo.json";
 import llmDemo from "../sample_runs/llm_demo.json";
 import newsDemo from "../sample_runs/news_demo.json";
 import educationPassDemo from "../sample_runs/education_pass_demo.json";
@@ -34,6 +35,7 @@ import politicalDemo from "../sample_runs/political_demo.json";
 type DatasetKey =
   | "legacy"
   | "finance"
+  | "finance_2008"
   | "llm"
   | "news"
   | "education_pass"
@@ -50,6 +52,7 @@ type LoadedDataset = {
 const DATASET_LABELS: Record<DatasetKey, string> = {
   legacy: "Demo Legado (2007-2011)",
   finance: "Finanças: BTC/USD",
+  finance_2008: "Finanças: GFC 2008 — Kappa-FIN v3 (S&P 500)",
   llm: "LLM: Mistral-7B HaluEval",
   news: "News: Análise de Notícias",
   education_pass: "Educação: Aprovados (OULAD)",
@@ -76,6 +79,18 @@ const DATASETS: Record<DatasetKey, () => LoadedDataset> = {
     return {
       key: "finance",
       label: DATASET_LABELS.finance,
+      data: withPhase,
+      info,
+    };
+  },
+  finance_2008: () => {
+    const parsed = parseRadianteV1(finance2008Demo);
+    const data = adaptRadianteV1ToTimeSeries(parsed);
+    const withPhase = computePhaseDerivatives(data);
+    const info = extractDatasetInfo(parsed, withPhase);
+    return {
+      key: "finance_2008",
+      label: DATASET_LABELS.finance_2008,
       data: withPhase,
       info,
     };
