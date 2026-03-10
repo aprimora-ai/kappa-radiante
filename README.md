@@ -2,6 +2,7 @@
 
 **Visualization and formal analysis layer of the Kappa Method**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18932379.svg)](https://doi.org/10.5281/zenodo.18932379)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > *"In astronomy, the radiant is the point in the sky from which meteor trajectories appear to converge when projected onto 2D. The Structural Radiante operates the inverse — it takes high-dimensional trajectories and projects them into interpretable spaces, preserving the regime properties that matter."*
@@ -32,7 +33,7 @@ The Radiante is the visualization layer of a family of tools built on the Kappa 
 | **Kappa Method** (technical report) | [10.5281/zenodo.18883639](https://doi.org/10.5281/zenodo.18883639) | Theoretical foundation — defines Oh, Φ, η, Ξ, DEF and the three regimes |
 | **Kappa-FIN v3** | [10.5281/zenodo.18917558](https://doi.org/10.5281/zenodo.18917558) | Financial application — 17 historical crises (1985–2023), GFC 2008 detected 10 months before Lehman |
 | **Kappa-LLM** | [10.5281/zenodo.18883790](https://doi.org/10.5281/zenodo.18883790) | LLM application — hallucination detection via attention dynamics, AUC 94.2% |
-| **Kappa-Radiante** ← *this repository* | — | Visualization and formal analysis. Schema radiante.v1. Gravitational sub-observable Ψ. |
+| **Kappa-Radiante** ← *this repository* | [10.5281/zenodo.18932379](https://doi.org/10.5281/zenodo.18932379) | Visualization and formal analysis. Schema radiante.v1. Gravitational sub-observable Ψ. |
 | **Kappa-GEO** *(in development)* | — | Geopolitical application — GDELT networks, EII, Γ_ext = EII·g_eff |
 
 ---
@@ -157,6 +158,8 @@ Requires Node.js 18+.
                of the Kappa Method},
   year      = {2026},
   publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18932379},
+  url       = {https://doi.org/10.5281/zenodo.18932379},
   note      = {Introduces gravitational sub-observable Ψ(t) and schema radiante.v1.}
 }
 ```
